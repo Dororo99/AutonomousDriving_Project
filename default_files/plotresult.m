@@ -8,7 +8,7 @@
     sampletime = 0.001;
     vizRate = rateControl(1/sampletime);
     % csvPath = '/Users/l/Club/사미용두/simulink files/map_demo_1.csv';
-    csvPath = './map_demo_1.csv';
+    csvPath = '../map/map_demo_1.csv';
     matrix = csvread(csvPath);
 
     hold on

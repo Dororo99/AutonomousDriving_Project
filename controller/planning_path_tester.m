@@ -3,7 +3,6 @@ planning path tester
     - input:
         - path.csv
 %}
-
 function main()
     path = csvread("hybrid_astar_path.csv");
     path = flipud(path)

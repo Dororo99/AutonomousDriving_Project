@@ -10,7 +10,7 @@ map
 
 function main()
     % 맵 불러오기
-    map_csv = './map_demo_1.csv';
+    map_csv = '../maps/map_demo_1.csv';
     % map_csv = './map_box_enclosure.csv'
     matrix = csvread(map_csv);
     matrix = expand_obstacles(matrix);  % 안전 여유를 고려한 맵으로 변환

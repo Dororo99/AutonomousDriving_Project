@@ -56,8 +56,8 @@ function RRT(map, start, goal)
 end
 
 function path = rrt_search(map, start, goal)
-    max_iter = 10000;
-    step_size = 5;
+    max_iter = 1000000;
+    step_size = 1;
     goal_threshold = 5;
 
     [rows, cols] = size(map);
@@ -85,6 +85,7 @@ function path = rrt_search(map, start, goal)
         nearest = tree(nearest_idx).position;
         direction = rand_point - nearest;
         norm_dir = norm(direction);
+
         if norm_dir == 0
             continue;
         end

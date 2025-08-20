@@ -10,7 +10,7 @@ map
 
 function result = main()
     % 맵 불러오기
-    map_csv = './map_demo_1.csv';
+    map_csv = '../maps/map_demo_1.csv';
     matrix = csvread(map_csv);
     matrix_expanded = expand_obstacles(matrix);  % 확장된 맵 생성
 

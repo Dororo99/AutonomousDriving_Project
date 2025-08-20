@@ -46,7 +46,7 @@ end
 function [path, g, rhs, Q] = dstar_lite_search(map, start, goal, g_in, rhs_in, Q_in)
     [rows, cols] = size(map);
 
-    if nargin < 4
+    if margin < 4
         g = Inf(rows, cols);
         rhs = Inf(rows, cols);
         rhs(goal(1), goal(2)) = 0;
